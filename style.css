@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+section{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(30, 38%, 92%);
+}
+#card{
+  display: flex;
+  flex-direction: row; 
+  border-radius: 15px; 
+  overflow: hidden;
+}
+.parfume_img{
+  width: 400px; 
+  height: 600px;
+  background: url(images/image-product-desktop.jpg);
+  background-size: cover;  
+}
+.text{
+  width: 400px; 
+  height: 600px;
+  padding: 42px;
+  background-color: hsl(0, 0%, 100%);
+}
+.name{
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Montserrat;
+  color: hsl(228, 12%, 48%);
+}
+.title{
+  font-size: 45px;
+  font-weight: 700;
+  font-family: Fraunces;
+  line-height: 42px;
+  margin-top: 26px;
+  margin-bottom: 26px;
+  color: hsl(212, 21%, 14%)
+}
+.discreption{
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Montserrat;
+  color: hsl(228, 12%, 48%);
+  line-height: 30px;
+}
+.price{
+  display: flex;
+  align-items: center;
+  margin-top: 38px;
+  margin-bottom: 38px;
+}
+.new_price{
+  font-size: 45px;
+  font-weight: 700;
+  font-family: Fraunces;
+  margin-right: 20px;
+  color: hsl(158, 36%, 37%)
+}
+.old_price{
+  font-size: 18px;
+  font-family: Montserrat;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+button{
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Montserrat;
+  color: white;
+  background-color: hsl(158, 36%, 37%);
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+}
+.icon{
+  margin-right: 10px;
+}
+
+@media (max-width: 700px) {
+  #card{
+    flex-direction: column;
+  }
+  .parfume_img{
+    width: 370px;
+    height: 265px;
+    background: url(images/image-product-mobile.jpg);
+    background-size: cover;  
+  }
+  .text{
+    width: 370px;
+    height: 410px;
+    padding: 29px;
+  }
+  .name{
+    font-size: 14px;
+  }
+  .title{
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 37px;
+  }
+  .discreption{
+    font-size: 15px;
+    line-height: 28px;
+  }
+  .price{
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .new_price{
+    font-size: 35px;
+  }
+  .old_price{
+    font-size: 14px;
+  }
+} 
